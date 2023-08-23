@@ -2,11 +2,11 @@
 
 namespace lab5.Pattern
 {
-    public class PinEntredState : IATMState
+    public class PinEntringState : IATMState
     {
         private ATM atm;
 
-        public PinEntredState(ATM atm)
+        public PinEntringState(ATM atm)
         {
             this.atm = atm;
         }

@@ -50,6 +50,11 @@
             currentState.WithdrawCash(amountOfCash);
         }
 
+        public void EjectCard()
+        {
+            currentState.EjectCard();
+        }
+
         public void IncrementFailedAttempts()
         {
             FailedAttempts++;

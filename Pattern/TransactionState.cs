@@ -24,7 +24,8 @@ namespace lab5.Pattern
             if (amountOfCash > atm.CashInMachine)
             {
                 Console.WriteLine("Not enough cash in ATM!");
-                atm.SetState(new OutOfServiceState(atm));
+                Console.WriteLine("Current balance is {0}",atm.CashInMachine);
+
             }
             else if (amountOfCash > atm.TransactionLimit)
             {

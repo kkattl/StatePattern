@@ -45,7 +45,7 @@
   <ItemGroup>
     <Compile Include="Pattern\ATM.cs" />
     <Compile Include="Pattern\IATMState.cs" />
-    <Compile Include="Pattern\PinEntredState.cs" />
+    <Compile Include="Pattern\PinEntringState.cs" />
     <Compile Include="Pattern\OutOfServiceState.cs" />
     <Compile Include="Pattern\ReadyState.cs" />
     <Compile Include="Pattern\TransactionState.cs" />

@@ -12,22 +12,21 @@ namespace lab5.Pattern
         }
         public void InsertCard()
         {
-            atm.SetState(new ReadyState(atm));
+            Console.WriteLine("ATM is blocked");
         }
         public void EnterPIN(int pin)
         {
-            Console.WriteLine("Card is blocked. Please contact your bank.");
+            Console.WriteLine("ATM is blocked");
         }
-
 
         public void WithdrawCash(int amountOfCash)
         {
-            Console.WriteLine("Card is blocked. Please contact your bank.");
+            Console.WriteLine("ATM is blocked");
         }
 
         public void EjectCard()
         {
-            Console.WriteLine("Card ejected.");
+            Console.WriteLine("ATM is blocked");
         }
     }
 }

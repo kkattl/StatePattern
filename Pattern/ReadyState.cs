@@ -12,8 +12,15 @@ namespace lab5.Pattern
         }
         public void InsertCard()
         {
-            Console.WriteLine("Card inserted. Please enter your PIN.");
-            atm.SetState(new PinEntredState(atm));
+            if (atm.CashInMachine > 0)
+            {
+                Console.WriteLine("Card inserted. Please enter your PIN.");
+                atm.SetState(new PinEntringState(atm));
+            }
+            else
+            {
+                atm.SetState(new OutOfServiceState(atm));
+            }
         }
         public void EnterPIN(int pin)
         {

@@ -1,10 +1,5 @@
 ﻿using lab5.Pattern;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.NetworkInformation;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace lab5
 {
@@ -23,7 +18,10 @@ namespace lab5
             atm.EnterPIN(1234);
             atm.EnterPIN(2314);
             atm.WithdrawCash(10000);
-
+            atm.WithdrawCash(10000);
+            atm.EjectCard();
+            atm.InsertCard();
+            atm.EnterPIN(2314);
             Console.ReadKey();
         }
     }
